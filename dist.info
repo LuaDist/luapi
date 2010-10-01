@@ -1,0 +1,14 @@
+--- This file is part of LuaDist project
+
+name = "luapi"
+version = "1.0"
+
+desc = "LuaPi: Concurrent programming made simple."
+author = "Frederic Peschanski"
+license = "MIT"
+url = "http://luapi.luaforge.net"
+maintainer = "Peter Kapec"
+
+depends = {
+	"lua ~> 5.1",
+}
