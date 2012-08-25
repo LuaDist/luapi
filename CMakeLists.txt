@@ -1,18 +1,20 @@
-# Copyright (C) 2007-2009 LuaDist.
+# Copyright (C) 2007-2012 LuaDist.
 # Created by Peter Kapec
 # Redistribution and use of this file is allowed according to the terms of the MIT license.
 # For details see the COPYRIGHT file distributed with LuaDist.
 # Please note that the package source code is licensed under its own license.
 
-PROJECT(luapi NONE)
-CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
-INCLUDE(dist.cmake)
+project ( luapi NONE )
+cmake_minimum_required ( VERSION 2.8 )
+include ( cmake/dist.cmake )
+include ( lua )
 
 # Install all files and documentation
-INSTALL(FILES lib/pithreads.lua lib/utils.lua DESTINATION ${INSTALL_LMOD})
+install_lua_module ( pithreads lib/pithreads.lua )
+install_lua_module ( utils lib/utils.lua )
 
-INSTALL(FILES AUTHORS COPYRIGHT HISTORY VERSION README DESTINATION ${INSTALL_DATA})
-INSTALL(DIRECTORY doc/ DESTINATION ${INSTALL_DOC})
+install_data ( AUTHORS COPYRIGHT HISTORY VERSION README )
+install_doc ( doc/ )
 
-INSTALL(DIRECTORY examples/ DESTINATION ${INSTALL_EXAMPLE})
-INSTALL(FILES lib/utils-tests.lua DESTINATION ${INSTALL_TEST})
+install_example ( examples/ )
+install_test ( lib/utils-tests.lua )
