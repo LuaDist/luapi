@@ -1,0 +1,66 @@
+type = "x86_64"
+arch = "Ubuntu"
+author = "Frederic Peschanski"
+depends = {
+[[lua ~> 5.1]],
+}
+
+desc = "LuaPi: Concurrent programming made simple."
+version = "1.0"
+maintainer = "Peter Kapec"
+files = {
+Runtime = {
+[[lib/lua/pithreads.lua]],
+[[lib/lua/utils.lua]],
+}
+,
+Test = {
+[[share/luapi/test/utils-tests.lua]],
+}
+,
+Example = {
+[[share/luapi/example//buffer1.lua]],
+[[share/luapi/example//hybrid.lua]],
+[[share/luapi/example//boolguards.lua]],
+[[share/luapi/example//writers.lua]],
+[[share/luapi/example//quicksort.lua]],
+[[share/luapi/example//chameneos.lua]],
+[[share/luapi/example//readers.lua]],
+[[share/luapi/example//ubcast.lua]],
+[[share/luapi/example//sieve.lua]],
+[[share/luapi/example//onetwothree.lua]],
+[[share/luapi/example//taskpool.lua]],
+[[share/luapi/example//oz-death.lua]],
+[[share/luapi/example//bclock2.lua]],
+[[share/luapi/example//rdv.lua]],
+[[share/luapi/example//cheap-concurrency.lua]],
+[[share/luapi/example//tutorial/pingpong2.lua]],
+[[share/luapi/example//tutorial/dining2.lua]],
+[[share/luapi/example//tutorial/dining3.lua]],
+[[share/luapi/example//tutorial/clock.lua]],
+[[share/luapi/example//tutorial/dining1.lua]],
+[[share/luapi/example//tutorial/async.lua]],
+[[share/luapi/example//tutorial/pingpong1.lua]],
+[[share/luapi/example//tutorial/votes.lua]],
+[[share/luapi/example//tutorial/bclock.lua]],
+[[share/luapi/example//tutorial/cs.lua]],
+[[share/luapi/example//joinfruits.lua]],
+}
+,
+Data = {
+[[share/luapi/AUTHORS]],
+[[share/luapi/COPYRIGHT]],
+[[share/luapi/HISTORY]],
+[[share/luapi/VERSION]],
+[[share/luapi/README]],
+}
+,
+Documentation = {
+[[share/luapi/doc//LuaPiTut.pdf]],
+}
+,
+}
+
+license = "MIT"
+name = "luapi"
+url = "http://luapi.luaforge.net"
